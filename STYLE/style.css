@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Lexend+Giga:wght@100..900&family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: "Afacad Flux", serif;
+    text-align: center;
+    background: linear-gradient(45deg, black, #5e0303f8);
+    color: white;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s, color 0.5s;
+}
+
+body.light-theme {
+    background: linear-gradient(45deg, white, #ffcccb);
+    color: black;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(45deg, #ff4d4d, #b30000);
+    color: white;
+    box-shadow: 0px 4px 10px rgba(27, 1, 1, 0.6);
+}
+
+.theme-toggle:hover {
+    background: linear-gradient(45deg, #ff1a1a, #800000);
+    transform: scale(1.07);
+}
+
+body.light-theme .theme-toggle {
+    background: linear-gradient(45deg, #ffcccb, #cb8e8e);
+    color: black;
+    border:1px solid rgb(0, 0, 0) ;
+    
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 50px;
+    /* color: #ff4d4d; */
+    text-shadow: 2px 2px 10px rgba(255, 77, 77, 0.8);
+    transition: color 0.5s ease-in-out;
+}
+
+body.ligth-theme h1{
+    color: #800000;
+}
+
+#search-box {
+    width: 60%;
+    max-width: 400px;
+    padding: 14px;
+    border-radius: 30px;
+    border: 2px solid #ff4d4d;
+    outline: none;
+    font-size: 1rem;
+    font-family: "Afacad Flux", serif;
+    margin: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#search-box::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#search-box:focus {
+    border-color: #ff1a1a;
+    background-color: rgba(56, 39, 39, 0.409);
+}
+
+body.light-theme #search-box:focus {
+    border-color: #000000;
+    background-color: rgba(0, 0, 0, 0.404);
+}
+
+body.light-theme #search-box {
+    background-color: rgba(194, 122, 122, 0.763);
+    color: black;
+    border: 1px solid #875f5f;
+}
+
+button {
+    padding: 12px 22px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    background: linear-gradient(45deg, #ff4d4d, #b30000);
+    color: white;
+    font-size: 1rem;
+    font-family: "Afacad Flux", serif;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px rgba(27, 1, 1, 0.6);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff1a1a, #800000);
+    transform: scale(1.1);
+    
+}
+
+body.light-theme button{
+    background: linear-gradient(45deg, #f0e5e5, #d56a6a );
+    color: black;
+    box-shadow: none;
+}
+
+body.light-theme button:hover{
+    background: linear-gradient(45deg, #be8e8ee6, #ec5050 );
+    color: black;
+}
+
+#genres-section {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.genres button {
+    padding: 8px 12px;
+    font-size: 0.85rem; 
+    border-radius: 15px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #000000;
+    transition: 0.3s;
+    font-family: "Afacad Flux", serif;
+
+}
+
+.genres button:hover {
+    background-color: #ff4d4d;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    padding: 20px;
+    justify-items: center;
+    
+}
+
+.movie {
+    width: 200px;
+    background: linear-gradient(45deg, #871a1a, #7a0303);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.movie:hover {
+    transform: scale(1.1);
+    /* box-shadow: 0px 0px 15px rgba(255, 77, 77, 0.8); */
+    box-shadow: 0px 4px 10px rgba(27, 1, 1, 0.797);
+    background: linear-gradient(45deg, #8b0e0e, #a70404);
+}
+
+body.light-theme .movie{
+    background: linear-gradient(45deg, #ffcccb, #ff1a1a );
+}
+.movie img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.movie h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    #search-box {
+        width: 80%;
+    }
+    /* .genres {
+        flex-direction: column;
+        align-items: center;
+    } */
+}

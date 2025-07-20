@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLUG Movie Player</title>
+    <link rel="stylesheet" href="STYLE/style.css">
+</head>
+<body>
+
+    <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+
+    <h1>GLUG Movie Player</h1>
+    
+    <input type="text" id="search-box" placeholder="Search for a movie...">
+    <button onclick="searchMovies()">Search</button>
+
+    <section id="genres-section">
+        <h2>Explore by Genres</h2>
+        <div class="genres">
+            <button onclick="filterByGenre('28')">Action</button>
+            <button onclick="filterByGenre('35')">Comedy</button>
+            <button onclick="filterByGenre('18')">Drama</button>
+            <button onclick="filterByGenre('10749')">Romance</button>
+            <button onclick="filterByGenre('10402')">Music</button>
+            <button onclick="filterByGenre('53')">Thriller</button>
+            <button onclick="filterByGenre('878')">Science Fiction</button>
+            <button onclick="filterByGenre('10752')">War</button>
+            <button onclick="filterByGenre('99')">Documentary</button>
+            <!-- <button onclick="filterByGenre('10757')">Bollywood</button>
+            <button onclick="filterByGenre('10758')">Tollywood</button>
+            <button onclick="filterByGenre('10759')">Hollywood</button> -->
+        </div>
+    </section>
+
+    <div class="movie-container" id="movies"></div>
+
+    <section id="trending-section">
+        <h2>Trending Movies</h2>
+        <div class="movie-container" id="trending-movies"></div>
+    </section>
+
+  
+    <script src="SCRIPT/script.js"></script>
+    <script src="SCRIPT/theme.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Details</title>
+    <link rel="stylesheet" href="STYLE/movieDetails.css">
+</head>
+<body>
+
+    <button class="home-button" onclick="goHome()">🏠Home</button>
+    <button id="theme-toggle" class="theme-toggle">🌙 Dark Mode</button>
+
+
+    <div class="container">
+        <h1 id="movie-title">Loading...</h1>
+        
+       
+        <div class="poster-wrapper">
+            <img src="" alt="Movie Poster" class="poster" id="poster">
+        </div>
+        
+        
+        <div class="details">
+            <p><strong>⭐ Rating:</strong> <span id="rating"></span>/10</p>
+            <p><strong>⏳ Duration:</strong> <span id="duration"></span> min</p>
+            <p><strong>🎭 Genres:</strong> <span id="genres"></span></p>
+            <p><strong>📖 Overview:</strong> <span id="overview"></span></p>
+            <p><strong>🎭 Cast:</strong> <span id="cast"></span></p>
+        </div>
+
+        <div id="video-container">
+            <p>Loading trailer...</p>
+        </div>
+
+        <h2>Watch Now</h2>
+        <div id="watch-providers"></div>
+    </div>
+
+    <script src="SCRIPT/movieDetails.js"></script>
+    <script src="SCRIPT/theme.js"></script>
+
+</body>
+</html>

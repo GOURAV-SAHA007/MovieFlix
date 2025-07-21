@@ -40,3 +40,10 @@ Modular JavaScript structure with clean CSS makes it easy to modify and scale.
 
 
 ---
+
+
+⚠️ Important: Create a config.js file inside the SCRIPT/ folder.
+Copy the content from config_sample.js and replace 'your_api_key_here' with your own API key.
+Never share your actual config.js file publicly. It's already ignored via .gitignore.
+
+---
